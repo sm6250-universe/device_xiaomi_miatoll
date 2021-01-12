@@ -133,6 +133,10 @@ TARGET_KERNEL_CLANG_VERSION := proton
 TARGET_KERNEL_CONFIG := vendor/miatoll-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/miatoll
 
+# Kernel additional flags
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 
