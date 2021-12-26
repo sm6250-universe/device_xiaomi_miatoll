@@ -6,10 +6,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/miatoll/atoll.mk)
 
 # Inherit some common Awaken OS stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+DERP_BUILDTYPE := OFFICIAL
 
 # Device identifier
-PRODUCT_NAME := awaken_miatoll
+PRODUCT_NAME := derp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
@@ -21,4 +22,5 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # GMS
 TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
+WITH_GMS := true
+IS_PHONE := true

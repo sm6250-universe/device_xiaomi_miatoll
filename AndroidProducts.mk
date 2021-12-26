@@ -1,7 +1,9 @@
 # Product Makefiles
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_miatoll.mk
+    $(LOCAL_DIR)/derp_miatoll.mk
 
 # Lunch targets
 COMMON_LUNCH_CHOICES := \
-    awaken_miatoll-userdebug
+    derp_miatoll-user \
+    derp_miatoll-userdebug \
+    derp_miatoll-eng
